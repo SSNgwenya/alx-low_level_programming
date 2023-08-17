@@ -24,9 +24,9 @@ int main(void)
 					{
 						putchar(a);
 						putchar(b);
-						putchar(' ')
+						putchar(' ');
 						putchar(c);
-						putchard(d);
+						putchar(d);
 
 						if (a + b + c + d == '179' && a == '9')
 						{
