@@ -2,21 +2,27 @@
 
 /**
  * main - This a main function
- * Return: Always return 0 when successful
+ * Return: Always return 0 when succesessfu
  */
 
 int main(void)
 {
-	int i;
+	char v;
 
-	for (i = 0; i < 10 || i < 'g'; i++)
-	{
-		if (i < 10)
-			putchar(i + '0');
-		else
-			putchar(i);
-	}
+	int c;
 
+	v = 'a';
+	c = 0;
+	while
+		(c < 10) {
+			putchar(c + '0');
+			c++;
+		}
+	while
+		(v <= 'f') {
+			putchar(v);
+			v++;
+		}
 	putchar('\n');
 	return (0);
 }
