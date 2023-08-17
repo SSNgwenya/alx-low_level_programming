@@ -7,21 +7,21 @@
 
 int main(void)
 {
-	char num,
+	char n,
 
-	     int eber;
+	     int e;
 
-	num = 'a';
-	eber = 0;
+	n = 'a';
+	e = 0;
 	while
-		(eber < 10) {
-			putchar(eber + '0');
-			eber++;
+		(e < 10) {
+			putchar(e + '0');
+			e++;
 		}
 	while 
-		(num <= 'f') {
-			putchar(num);
-			num++;
+		(n <= 'f') {
+			putchar(n);
+			n++;
 		}
 	putchar('\n');
 	return (0);
