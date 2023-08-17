@@ -5,7 +5,7 @@
  * Return: Always return 0 when successful
  */
 
-int main()
+int main(void)
 {
 	char l;
 
