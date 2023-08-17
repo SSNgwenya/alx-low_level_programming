@@ -9,14 +9,12 @@ int main(void)
 {
 	int num = 0;
 
-	do
-	{
+	do{
 		printf("%d", num);
 		num++;
-	} 
+	}
 	while (num < 10);
 
-	
 	putchar('\n');
 	return (0);
 }
