@@ -12,13 +12,13 @@ int main(void)
 	int c = '0';
 	int d = '0';
 
-	while (a <= '9'; a++)
+	while (a <= '9')
 	{
-		while (b <= '9'; b++)
+		while (b <= '9')
 		{
-			while (c <= '9'; c++)
+			while (c <= '9')
 			{
-				while (d <= '9'; d++)
+				while (d <= '9')
 				{
 					if ((c + d > (a +b) && c >= a) || a < c)
 					{
@@ -39,8 +39,12 @@ int main(void)
 						}
 					}
 				}
+				c++;
 			}
+			b++;
+
 		}
+		a++;
 	}
 	putchar('\n');
 	return (0);
