@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _isdigit - Is a fuction that looks for number in the code according to specific paremeters
+ * _isdigit - Is a fuction that looks for numbers
  * @c: varibles assed
- * Return: 1 if c is a number, otherwise return 0
+ * Return: 1 if c is a digit, 0 otherwise
  */
 
 int _isdigit(int c)
