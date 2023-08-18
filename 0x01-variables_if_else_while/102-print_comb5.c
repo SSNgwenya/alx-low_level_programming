@@ -7,46 +7,28 @@
 
 int main(void)
 {
-	int a = '0';
-	int b = '0';
-	int c = '0';
-	int d = '0';
+	int a , b;
 
-	while (a <= '9')
+	for (a = 0; a <= 99; a++)
 	{
-		while (b <= '9')
+		for (b = 0; b <= 99; b++)
 		{
-			while (c <= '9')
+			if (a < b && a != b)
 			{
-				while (d <= '9')
+				putchar((a / 10) + '0');
+				putchar((a % 10) + '0');
+				putchar(' ');
+				putchar((b / 10) + '0');
+				putchar((b % 10) + '0');
+				if (a != 98 || b != 99)
 				{
-					if ((c + d > (a +b) && c >= a) || a < c)
-					{
-						putchar(a);
-						putchar(b);
-						putchar(' ');
-						putchar(c);
-						putchar(d);
-
-						if (a + b + c + d == '179' && a == '9')
-						{
-							break;
-						}
-						else
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
+					putchar(',');
+					putchar(' ');
 				}
-				c++;
 			}
-			b++;
-
 		}
-		a++;
 	}
 	putchar('\n');
 	return (0);
-
 }
+
