@@ -2,12 +2,12 @@
 
 /**
  * more_numbers - prints 10 times the numbers
+ * followed by new line
  */
 
 void more_numbers(void)
 {
 	int q;
-	
 	int w;
 
 	for (q = 0; q < 10; q++)
@@ -18,7 +18,7 @@ void more_numbers(void)
 			_putchar(w / 10 + '0');
 			_putchar(w % 10 + '0');
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 
 }
