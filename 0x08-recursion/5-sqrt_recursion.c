@@ -2,9 +2,9 @@
 
 /**
  * sqrt_a - return natureal square root of number
- * @n: input number
- * @c: iterator
  * Return: square root or -1
+ * @a: first number
+ * @b: second number
  */
 
 int sqrt_a(int a, int b)
