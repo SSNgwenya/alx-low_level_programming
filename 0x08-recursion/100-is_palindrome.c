@@ -8,13 +8,9 @@
 int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
-	{
 		return (0);
-	}
 	else
-	{
 		return (1 + _strlen_recursion(s + 1));
-	}
 }
 /**
  * compare_string - compare each character of string
@@ -43,8 +39,6 @@ int compare_string(char *s, int a, int b)
 int is_palindrome(char *s)
 {
 	if (*s == '\0')
-	{
 		return (1);
-	}
-	return (compare_string(s, 0, _strlen_recursion(s - 1)));
+	return (compare_string(s, 0, _strlen_recursion((s) - 1)));
 }
