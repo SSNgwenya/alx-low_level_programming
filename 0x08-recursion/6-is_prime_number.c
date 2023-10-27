@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prima_a - calculate if prime
+ * prime_a - calculate if prime
  * @a: input
  * @b: divisor
  * Return: (0)
