@@ -22,13 +22,11 @@ int _strlen_recursion(char *s)
 
 int compare_string(char *s, int a, int b)
 {
-	if (*(s + a) == *(s + b))
-	{
-		if (a == b || a == b + 1)
-			return (1);
-		return (0 + compare_string(s, a + 1, b - 1));
-	}
-	return (0);
+	if (*(s + a) != *(s + b - 1))
+		return (0);
+	if (a >= b)
+		return (1);
+	return (compare_string(s, a + 1, b - 1));
 }
 /**
  * is_palindrome - tests if string is a palindrome
@@ -39,6 +37,6 @@ int compare_string(char *s, int a, int b)
 int is_palindrome(char *s)
 {
 	if (*s == '\0')
-		return (1);
-	return (compare_string(s, 0, _strlen_recursion((s) - 1)));
+		return (0);
+	return (compare_string(s, 0, _strlen_recursion(s)));
 }
