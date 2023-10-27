@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * sqrt_a - return natural square-root of number 
- * @n: input number
- * @c: iterator
+ * sqrt_a - return natural square-root of number
+ * @a: input number
+ * @b: iterator
  * Return: square root or -1
  */
 
