@@ -1,0 +1,18 @@
+*main.c
+./11-98
+./10-add
+./9-times_table | cat -e
+./9-times_table | tr ' ' . | cat -e
+./8-24 | head
+./8-24 | tail
+./8-24 | wc -l
+./8-24
+./9-times_table
+./7-last_digit
+./6-abs
+./5-sign
+./4-isalpha
+./3-islower
+./2-alphabet_x10
+./1-alphabet
+./0-putchar
