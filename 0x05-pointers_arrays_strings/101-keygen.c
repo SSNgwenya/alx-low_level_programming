@@ -3,30 +3,34 @@
 #include <time.h>
 
 /**
- * main - generates random passwords for 101-crackme program
- * Return: 0 when successful
+ * main - program that generates random valid
+ * passwords for the program 101-crackme
+ *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-    int password[100];
-    int k;
-    int s = 0;
-    int a;
+	int pass[100];
+	int i, sum, n;
 
-    srand(time(NULL));
-    for (k = 0; k < 100; k++)
-    {
-        password[k] = rand() % 78;
-        s += (password[k] + '0');
-        putchar(password[k] + '0');
-        if ((2772 - s) < 78)
-        {
-            a = 2772 - s;
-            s += a;
-            putchar(a + '0');
-            break;
-        }
-    }
-    return (0);
+	sum = 0;	
+
+	srand(time(NULL));
+
+	for (i = 0; i < 100; i++)
+	{
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - sum) - '0' < 78)
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
+
+		}
+	}
+
+	return (0);
 }
