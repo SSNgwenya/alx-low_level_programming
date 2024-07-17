@@ -1,6 +1,3 @@
-#!/usr/bin/make -f
-# 6. make -f 100-Makefile
-
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -pedantic
 NAME = school
