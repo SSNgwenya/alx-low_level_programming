@@ -2,23 +2,26 @@ CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-CFLAGS = -wall -werror -wextra -pedantic
-
+CFLAGS = -Wall -Werror -Wextra -pedantic
+RM = /bin/rm -f
 
 .PHONY: all clean oclean fclean re
 
-
-all: m.h $(OBJ) -o $(NAME)
-
+all: m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(BM) *~ $(NAME)
-
+	$(RM) *~ $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
 fclean: clean oclean
 
-
 re: fclean all
+
+# Check if m.h exists
+ifeq ($(wildcard m.h),)
+$(error "Header file m.h is missing!")
+endif
+
