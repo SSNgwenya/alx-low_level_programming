@@ -47,5 +47,3 @@ def island_perimeter(grid):
         a += 1
 
     return perimeter
-
-print(island_perimeter(grid))
