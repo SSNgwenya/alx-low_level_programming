@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+# 6. make -f 100-Makefile
+
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+NAME = school
+SRC = $(wildcard *.c)
+OBJ = $(SRC:.c=.o)
+RM = /bin/rm -f
+
+.PHONY: all clean oclean fclean re
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	$(RM) *.o *~ $(NAME)
+
+oclean:
+	$(RM) *.o
+
+fclean: clean
+	$(RM) $(NAME)
+
+re: fclean all
+
+# Checking if m.h exists
+ifeq ($(wildcard m.h),)
+$(error "Header file m.h is missing!")
+endif
